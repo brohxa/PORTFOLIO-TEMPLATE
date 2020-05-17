@@ -14,16 +14,16 @@
     <link rel="stylesheet" href="style.css" />
     <title>Diamond</title>
   </head>
-  <body>
+  <body class="preload">
     <!-- HOME -->
     <section class="home">
       <!-- LEFT -->
       <div class="left">
         <h1 class="logo">Diamond</h1>
         <ul class="quality">
-          <li>Model</li>
-          <li>Actor</li>
-          <li>Designer</li>
+          <li class="typewriter typewriter1">Model</li>
+          <li class="typewriter typewriter2">Actor</li>
+          <li class="typewriter typewriter3">Designer</li>
         </ul>
         <a href="#" class="portfolio-button"> PORTFOLIO </a>
       </div>
@@ -46,11 +46,16 @@
           <a href="#"><i class="fab fa-pinterest"></i></a>
           <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
-        <h1>Elizabeth <br />Green</h1>
+        <h1 class="name">
+          Elizabeth <br />
+          <span class="surname">Green</span>
+        </h1>
         <!-- PUT YOUR MAIN IMAGE HERE -->
-        <img src="img/main.png" alt="" />
+        <img class="main" src="img/main.png" alt="" />
       </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="app.js"></script>
   </body>
