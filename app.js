@@ -17,55 +17,31 @@ window.addEventListener("load", function () {
   preload.classList.remove("preload");
 });
 
-// SOCIAL ON SCROLL
-const social1 = document.querySelector(".soc1");
-const social2 = document.querySelector(".soc2");
-const social3 = document.querySelector(".soc3");
-const social4 = document.querySelector(".soc4");
-const social5 = document.querySelector(".soc5");
-const social6 = document.querySelector(".soc6");
+// CLIENT BTN
 
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 500) {
-    social1.classList.add("active");
-  } else {
-    social1.classList.remove("active");
-  }
-});
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 500) {
-    social2.classList.add("active");
-  } else {
-    social2.classList.remove("active");
-  }
-});
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 500) {
-    social3.classList.add("active");
-  } else {
-    social3.classList.remove("active");
-  }
-});
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 500) {
-    social4.classList.add("active");
-  } else {
-    social4.classList.remove("active");
-  }
-});
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 500) {
-    social5.classList.add("active");
-  } else {
-    social5.classList.remove("active");
-  }
+const clientBtn = document.querySelector(".client-btn");
+const clientPage = document.querySelector(".client");
+
+clientBtn.addEventListener("click", function () {
+  const tl = new TimelineMax();
+
+  tl.fromTo(
+    clientPage,
+    2,
+    { width: "0px" },
+    { width: "100%", ease: Power2.easeInOut }
+  );
 });
 
-// SCROLL MAGIC
+const homeBtn = document.querySelector(".home-btn");
 
-var controller = new ScrollMagic.Controller();
-var scene = new ScrollMagic.Scene({
-  triggerElement: ".about",
-})
-  .setClassToggle(".about-image", "show")
-  .addTo(controller);
+homeBtn.addEventListener("click", function () {
+  const tl = new TimelineMax();
+
+  tl.fromTo(
+    clientPage,
+    2,
+    { width: "100%" },
+    { width: "0px", ease: Power2.easeInOut }
+  );
+});
