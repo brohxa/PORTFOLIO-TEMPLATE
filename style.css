@@ -12,7 +12,7 @@
 }
 
 .home {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: black;
@@ -22,8 +22,19 @@
 .left {
   width: 25%;
   height: 100%;
-  background-color: rgb(26, 138, 113);
+  background-image: url("img/sand.png");
   position: relative;
+}
+
+.white {
+  width: 40px;
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translate(0, -50%);
+  box-shadow: 2px 3px 5px black;
 }
 
 .logo {
@@ -34,6 +45,7 @@
   width: 30%;
   padding-top: 5px;
   padding-left: 5px;
+  cursor: default;
 }
 .logo::before {
   content: "shine";
@@ -63,15 +75,16 @@
 }
 
 .navbar ul {
-  width: 35%;
-  display: flex;
-  font-family: "poppins";
   font-size: 16px;
-  float: right;
+  position: absolute;
+  right: 10%;
+  display: flex;
+  z-index: 1;
   padding-top: 20px;
 }
 .navbar a {
   color: white;
+  font-family: "poppins", sans-serif;
   margin: 30px;
 }
 .social-logo {
@@ -87,6 +100,7 @@
   font-weight: 900;
   line-height: 35px;
   z-index: 1;
+  cursor: default;
 }
 .social {
   position: fixed;
@@ -95,29 +109,53 @@
   display: inline-block;
   z-index: 1;
 }
-.social a {
+.soc {
   color: white;
   display: block;
   margin: 15px;
   font-size: 20px;
   z-index: 1;
+  transition: 0.3s;
+}
+.soc.active {
+  color: rgb(0, 0, 0);
 }
 
 .portfolio-button {
   width: 50%;
   height: 80px;
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(0, 0, 0);
   font-family: "poppins", sans-serif;
   font-size: 30px;
   font-weight: 100;
   text-align: center;
   line-height: 80px;
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 100%;
   left: 0;
   transform: translateY(-100%);
+  transition: 0.1s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-101%);
+  transition: 0.2s;
+  z-index: -1;
+}
+.portfolio-button:hover::before {
+  transform: translateX(0);
+}
+.portfolio-button:hover {
+  color: black;
 }
 
 .quality {
@@ -131,18 +169,9 @@
   transform: translate(-50%, -50%);
   color: rgb(0, 0, 0);
 }
-.quality::before {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 50px;
-  background-color: rgb(255, 255, 255);
-  left: -80%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 .name {
   z-index: 1;
+  cursor: default;
 }
 .surname {
   display: block;
@@ -173,53 +202,71 @@
   width: 100%;
   height: 100%;
   position: relative;
-  z-index: -1;
-}
-.typewriter::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(26, 138, 113);
-  z-index: 1;
-}
-.typewriter1::before {
-  animation: type1 1.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-}
-.typewriter2::before {
-  animation: type2 1.5s;
-  animation-delay: 2.5s;
-  animation-fill-mode: forwards;
-}
-.typewriter3::before {
-  animation: type3 1.5s;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
 }
 
-@keyframes type1 {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 100%;
-  }
+/* ABOUT */
+
+.about {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/sand.png");
+  overflow: hidden;
+  display: block;
+  transition: 0.5s;
 }
-@keyframes type2 {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 100%;
-  }
+
+.about-image {
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 0.6s ease-in-out;
 }
-@keyframes type3 {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 100%;
-  }
+.about-image.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.sub-text {
+  font-family: "Playfair Display", sans-serif;
+  display: block;
+  width: 650px;
+  height: 50px;
+  font-size: 28px;
+
+  color: rgb(0, 0, 0);
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  overflow: hidden;
+  z-index: 1;
+}
+.load-text {
+  font-family: "Playfair Display", sans-serif;
+  width: 650px;
+  height: 200px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  right: 10%;
+  top: 40%;
+
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 20px;
+  z-index: 1;
+}
+.contact {
+  margin-top: 30px;
+  font-family: "Playfair Display", sans-serif;
+  width: 650px;
+  height: 800px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  right: 10%;
+  top: 60%;
+  z-index: 1;
 }
