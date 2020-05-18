@@ -40,7 +40,7 @@ homeBtn.addEventListener("click", function () {
 
   tl.fromTo(
     clientPage,
-    2,
+    1.5,
     { width: "100%" },
     { width: "0px", ease: Power2.easeInOut }
   );
