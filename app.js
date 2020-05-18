@@ -19,29 +19,95 @@ window.addEventListener("load", function () {
 
 // CLIENT BTN
 
-const clientBtn = document.querySelector(".client-btn");
+const clientBtn = document.querySelectorAll(".client-btn");
+const blogBtn = document.querySelectorAll(".blog-btn");
+const homeBtn = document.querySelectorAll(".home-btn");
 const clientPage = document.querySelector(".client");
+const blogPage = document.querySelector(".blog");
 
-clientBtn.addEventListener("click", function () {
+for (let i = 0; i < clientBtn.length; i++) {
+  clientBtn[i].addEventListener("click", function () {
+    const tl = new TimelineMax();
+    tl.fromTo(
+      clientPage,
+      1.5,
+      { width: "0px" },
+      { width: "100%", ease: Power2.easeInOut }
+    );
+
+    const tl2 = new TimelineMax();
+    tl2.fromTo(
+      blogPage,
+      1.5,
+      { width: "100%" },
+      { width: "0px", ease: Power2.easeInOut }
+    );
+  });
+}
+
+// HOME BUTTON
+
+for (let i = 0; i < homeBtn.length; i++) {
+  homeBtn[i].addEventListener("click", function () {
+    const tl = new TimelineMax();
+
+    tl.fromTo(
+      clientPage,
+      1.5,
+      { width: "100%" },
+      { width: "0px", ease: Power2.easeInOut }
+    );
+    const tl2 = new TimelineMax();
+
+    tl2.fromTo(
+      blogPage,
+      1.5,
+      { width: "100%" },
+      { width: "0px", ease: Power2.easeInOut }
+    );
+  });
+}
+
+// ALL BUTTONS IN HOME
+const clientBtnHome = document.querySelector(".client-btn-home");
+const blogBtnHome = document.querySelector(".blog-btn-home");
+
+clientBtnHome.addEventListener("click", function () {
   const tl = new TimelineMax();
-
   tl.fromTo(
     clientPage,
-    2,
+    1.5,
+    { width: "0px" },
+    { width: "100%", ease: Power2.easeInOut }
+  );
+});
+blogBtnHome.addEventListener("click", function () {
+  const tl = new TimelineMax();
+  tl.fromTo(
+    blogPage,
+    1.5,
     { width: "0px" },
     { width: "100%", ease: Power2.easeInOut }
   );
 });
 
-const homeBtn = document.querySelector(".home-btn");
+// BLOG BUTTON
+for (let i = 0; i < blogBtn.length; i++) {
+  blogBtn[i].addEventListener("click", function () {
+    const tl = new TimelineMax();
 
-homeBtn.addEventListener("click", function () {
-  const tl = new TimelineMax();
-
-  tl.fromTo(
-    clientPage,
-    1.5,
-    { width: "100%" },
-    { width: "0px", ease: Power2.easeInOut }
-  );
-});
+    tl.fromTo(
+      blogPage,
+      1.5,
+      { width: "0px" },
+      { width: "100%", ease: Power2.easeInOut }
+    );
+    const tl2 = new TimelineMax();
+    tl2.fromTo(
+      clientPage,
+      1.5,
+      { width: "100%" },
+      { width: "0px", ease: Power2.easeInOut }
+    );
+  });
+}
