@@ -62,6 +62,7 @@
   height: 100%;
   background-color: black;
   overflow: hidden;
+  position: relative;
 }
 
 .right h1 {
@@ -157,7 +158,36 @@
 .portfolio-button:hover {
   color: black;
 }
+.portfolio-button-second {
+  width: 40%;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  line-height: 80px;
+  display: none;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-100%);
+  transition: 0.1s;
+  overflow: hidden;
+  z-index: 1;
+}
 
+.portfolio-button-second::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  transform: translateX(-101%);
+  transition: 0.2s;
+  z-index: -1;
+}
 .quality {
   font-family: "poppins", sans-serif;
   font-size: 50px;
@@ -169,8 +199,9 @@
   transform: translate(-50%, -50%);
   color: rgb(0, 0, 0);
 }
-.name {
+.right .name {
   z-index: 1;
+  font-size: 80px;
   cursor: default;
 }
 .surname {
@@ -269,4 +300,126 @@
   right: 10%;
   top: 60%;
   z-index: 1;
+}
+@media all and (max-width: 1700px) {
+  .about .about-image {
+    opacity: 0.3;
+  }
+}
+@media all and (max-width: 1458px) {
+  .right .name {
+    font-size: 80px;
+    left: 40%;
+  }
+  .main {
+    opacity: 0.3;
+  }
+}
+@media all and (max-width: 1134px) {
+  .main {
+    opacity: 0.3;
+    width: 150%;
+  }
+  .right .name {
+    font-size: 60px;
+    left: 25%;
+  }
+  .left .quality {
+    font-size: 30px;
+    left: 40%;
+  }
+  .portfolio-button {
+    font-size: 20px;
+    width: 100%;
+  }
+  .surname {
+    color: black;
+  }
+  .surname::before {
+    transform: translateX(0);
+  }
+  .about .sub-text,
+  .load-text {
+    left: 20%;
+    margin-top: -10vh;
+  }
+}
+@media all and (max-width: 922px) {
+  .right .name {
+    left: 25%;
+  }
+  .about .sub-text,
+  .load-text {
+    left: 5%;
+    margin-top: -10vh;
+  }
+  .about .contact {
+    left: 5%;
+  }
+}
+@media all and (max-width: 758px) {
+  .about .load-text {
+    font-size: 15px;
+    width: 80%;
+  }
+  .about .sub-text {
+    font-size: 20px;
+    width: 80%;
+  }
+  .about .contact {
+    font-size: 15px;
+    width: 80%;
+  }
+}
+@media all and (max-width: 557px) {
+  .home {
+    flex-direction: column;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+  .right .name {
+    font-size: 50px;
+    left: 20%;
+  }
+  .portfolio-button-second {
+    display: block;
+  }
+}
+@media all and (max-width: 414px) {
+  .right .name {
+    font-size: 45px;
+    left: 15%;
+  }
+  .social-logo {
+    width: 60px;
+    font-size: 12px;
+  }
+  .portfolio-button-second {
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .navbar ul {
+    right: 5%;
+  }
+  .main {
+    width: 180%;
+  }
+}
+@media all and (max-width: 360px) {
+  .navbar ul {
+    right: -3%;
+  }
+  .navbar a {
+    font-size: 13px;
+  }
+
+  .load-text {
+    font-size: 12px !important;
+    margin-top: -10vh;
+  }
 }
