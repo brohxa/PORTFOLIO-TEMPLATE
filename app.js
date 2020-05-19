@@ -17,56 +17,41 @@ window.addEventListener("load", function () {
   preload.classList.remove("preload");
 });
 
-// CLIENT BTN
+// PAGE VARIABLES
 
-const clientBtn = document.querySelectorAll(".client-btn");
-const blogBtn = document.querySelectorAll(".blog-btn");
-const homeBtn = document.querySelectorAll(".home-btn");
 const clientPage = document.querySelector(".client");
 const blogPage = document.querySelector(".blog");
 
-for (let i = 0; i < clientBtn.length; i++) {
-  clientBtn[i].addEventListener("click", function () {
-    const tl = new TimelineMax();
-    tl.fromTo(
-      clientPage,
-      1.5,
-      { width: "0px" },
-      { width: "100%", ease: Power2.easeInOut }
-    );
+// ALL BUTTONS IN CLIENT
+const homeBtnClient = document.querySelector(".home-btn-client");
+const blogBtnClient = document.querySelector(".blog-btn-client");
 
-    const tl2 = new TimelineMax();
-    tl2.fromTo(
-      blogPage,
-      1.5,
-      { width: "100%" },
-      { width: "0px", ease: Power2.easeInOut }
-    );
-  });
-}
+homeBtnClient.addEventListener("click", function () {
+  const tl = new TimelineMax();
+  tl.fromTo(
+    clientPage,
+    1.5,
+    { width: "100%" },
+    { width: "0px", ease: Power2.easeInOut }
+  );
+});
 
-// HOME BUTTON
-
-for (let i = 0; i < homeBtn.length; i++) {
-  homeBtn[i].addEventListener("click", function () {
-    const tl = new TimelineMax();
-
-    tl.fromTo(
-      clientPage,
-      1.5,
-      { width: "100%" },
-      { width: "0px", ease: Power2.easeInOut }
-    );
-    const tl2 = new TimelineMax();
-
-    tl2.fromTo(
-      blogPage,
-      1.5,
-      { width: "100%" },
-      { width: "0px", ease: Power2.easeInOut }
-    );
-  });
-}
+blogBtnClient.addEventListener("click", function () {
+  const tl = new TimelineMax();
+  tl.fromTo(
+    blogPage,
+    1.5,
+    { width: "0px" },
+    { width: "100%", ease: Power2.easeInOut }
+  );
+  const tl2 = new TimelineMax();
+  tl2.fromTo(
+    clientPage,
+    1.5,
+    { width: "100%" },
+    { width: "0px", ease: Power2.easeInOut }
+  );
+});
 
 // ALL BUTTONS IN HOME
 const clientBtnHome = document.querySelector(".client-btn-home");
@@ -91,23 +76,33 @@ blogBtnHome.addEventListener("click", function () {
   );
 });
 
-// BLOG BUTTON
-for (let i = 0; i < blogBtn.length; i++) {
-  blogBtn[i].addEventListener("click", function () {
-    const tl = new TimelineMax();
+// ALL BUTTONS IN BLOG
+const homeBtnBlog = document.querySelector(".home-btn-blog");
+const clientBtnBlog = document.querySelector(".blog-btn-blog");
 
-    tl.fromTo(
-      blogPage,
-      1.5,
-      { width: "0px" },
-      { width: "100%", ease: Power2.easeInOut }
-    );
-    const tl2 = new TimelineMax();
-    tl2.fromTo(
-      clientPage,
-      1.5,
-      { width: "100%" },
-      { width: "0px", ease: Power2.easeInOut }
-    );
-  });
-}
+homeBtnBlog.addEventListener("click", function () {
+  const tl = new TimelineMax();
+  tl.fromTo(
+    blogPage,
+    1.5,
+    { width: "100%" },
+    { width: "0px", ease: Power2.easeInOut }
+  );
+});
+
+clientBtnBlog.addEventListener("click", function () {
+  const tl = new TimelineMax();
+  tl.fromTo(
+    clientPage,
+    1.5,
+    { width: "0px" },
+    { width: "100%", ease: Power2.easeInOut }
+  );
+  const tl2 = new TimelineMax();
+  tl2.fromTo(
+    blogPage,
+    1.5,
+    { width: "100%" },
+    { width: "0px", ease: Power2.easeInOut }
+  );
+});

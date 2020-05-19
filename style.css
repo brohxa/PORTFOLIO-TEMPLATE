@@ -103,7 +103,7 @@
   text-align: center;
   font-weight: 900;
   line-height: 35px;
-  z-index: 2;
+  z-index: 3;
   cursor: default;
 }
 .social {
@@ -111,14 +111,14 @@
   right: 5px;
   top: 45%;
   display: inline-block;
-  z-index: 2;
+  z-index: 3;
 }
 .soc {
   color: rgb(104, 104, 104);
   display: block;
   margin: 15px;
   font-size: 20px;
-  z-index: 2;
+  z-index: 3;
   transition: 0.3s;
 }
 
@@ -451,7 +451,7 @@
   width: 0%;
   height: 300%;
   background-color: black;
-  z-index: 2;
+  z-index: 1;
 }
 
 .navbar-client ul {
