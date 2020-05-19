@@ -20,11 +20,9 @@ window.addEventListener("load", function () {
 // PAGE VARIABLES
 
 const clientPage = document.querySelector(".client");
-const blogPage = document.querySelector(".blog");
 
 // ALL BUTTONS IN CLIENT
 const homeBtnClient = document.querySelector(".home-btn-client");
-const blogBtnClient = document.querySelector(".blog-btn-client");
 
 homeBtnClient.addEventListener("click", function () {
   const tl = new TimelineMax();
@@ -36,26 +34,8 @@ homeBtnClient.addEventListener("click", function () {
   );
 });
 
-blogBtnClient.addEventListener("click", function () {
-  const tl = new TimelineMax();
-  tl.fromTo(
-    blogPage,
-    1.5,
-    { width: "0px" },
-    { width: "100%", ease: Power2.easeInOut }
-  );
-  const tl2 = new TimelineMax();
-  tl2.fromTo(
-    clientPage,
-    1.5,
-    { width: "100%" },
-    { width: "0px", ease: Power2.easeInOut }
-  );
-});
-
 // ALL BUTTONS IN HOME
 const clientBtnHome = document.querySelector(".client-btn-home");
-const blogBtnHome = document.querySelector(".blog-btn-home");
 
 clientBtnHome.addEventListener("click", function () {
   const tl = new TimelineMax();
@@ -64,45 +44,5 @@ clientBtnHome.addEventListener("click", function () {
     1.5,
     { width: "0px" },
     { width: "100%", ease: Power2.easeInOut }
-  );
-});
-blogBtnHome.addEventListener("click", function () {
-  const tl = new TimelineMax();
-  tl.fromTo(
-    blogPage,
-    1.5,
-    { width: "0px" },
-    { width: "100%", ease: Power2.easeInOut }
-  );
-});
-
-// ALL BUTTONS IN BLOG
-const homeBtnBlog = document.querySelector(".home-btn-blog");
-const clientBtnBlog = document.querySelector(".blog-btn-blog");
-
-homeBtnBlog.addEventListener("click", function () {
-  const tl = new TimelineMax();
-  tl.fromTo(
-    blogPage,
-    1.5,
-    { width: "100%" },
-    { width: "0px", ease: Power2.easeInOut }
-  );
-});
-
-clientBtnBlog.addEventListener("click", function () {
-  const tl = new TimelineMax();
-  tl.fromTo(
-    clientPage,
-    1.5,
-    { width: "0px" },
-    { width: "100%", ease: Power2.easeInOut }
-  );
-  const tl2 = new TimelineMax();
-  tl2.fromTo(
-    blogPage,
-    1.5,
-    { width: "100%" },
-    { width: "0px", ease: Power2.easeInOut }
   );
 });
