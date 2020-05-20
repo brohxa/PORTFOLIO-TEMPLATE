@@ -344,6 +344,7 @@ z-index: 2;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   background-color: rgb(182, 182, 182);
   transition: .4s;
+  z-index: -1;
 }
 .about .feather{
   color: rgb(0, 0, 0);
@@ -628,7 +629,7 @@ z-index: -1;
   width: 0%;
   height: 300%;
   background-color: black;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar-client ul {
@@ -911,14 +912,51 @@ z-index: -1;
     background: rgb(24, 23, 23);
 }
 .white-mid{
-  width: 40%;
+  width: 0%;
   height: 90%;
   top: 5%;
   position: absolute;
-  left: 35%;
-  transform: translate(-50%);
-  background-color: #fff;
+  left: 15%;
+
+  background-color: rgb(212, 212, 212);
+  overflow: hidden;
+ 
 }
+.white-mid p {
+  width: 100%;
+  font-size: 13px;
+font-family: 'poppins',sans-serif;
+color: black;
+position: absolute;
+bottom: 5%;
+padding-left: 10%;
+border-top: black 1px solid;
+
+
+}
+.white-mid h6 {
+  width: 100%;
+  font-size: 10px;
+font-family: 'poppins',sans-serif;
+color: black;
+position: absolute;
+bottom: 5%;
+margin-left: 70%;
+
+}
+
+@keyframes white-mid{
+  from{
+    width: 10%;
+  }
+  to{
+    width: 40%;
+  }
+}
+
+
+
+
 .strip-left{
   width: 5%;
   height: 90%;
@@ -981,3 +1019,102 @@ z-index: -1;
   height: 600px;
   object-fit: cover;
 }
+
+/* COLLAGS */
+
+.collags{
+  min-width: 30vw;
+  height: 70%;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  background-color: rgb(230, 198, 140);
+  font-family: 'playfair display', sans-serif;
+}
+
+.collag1{
+ font-size: 60px;
+ color: rgb(0, 0, 0);
+  position: absolute;
+  left: 10%;
+  top: 10%;
+
+}
+.collag2{
+ font-size: 60px;
+ color: white;
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  transform: rotateZ(90deg) translate(0%);
+
+}
+.collag3{
+ font-size: 60px;
+ color: rgb(194, 71, 71);
+  position: absolute;
+  left: 30%;
+  top: 50%;
+ 
+}
+.collag4{
+ font-size: 50px;
+ color: rgb(0, 0, 0);
+  position: absolute;
+  left: 10%;
+  top: 70%;
+ 
+}
+
+.collag5{
+  font-size: 36px;
+  color: rgb(3, 3, 3);
+   position: absolute;
+   left: 70%;
+   top: 80%;
+   transform: rotateZ(90deg);
+ }
+ .card{
+   width: 450px;
+   background-color: brown;
+   border-radius: 5px;
+   height: 250px;
+   position: absolute;
+   left: 20%;
+   top: 20%;
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   transform: translate(-50%);
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+ }
+ 
+@keyframes card{
+  from{
+    transform: translate(-50%);
+    left: 20%;
+  }
+  to{
+    transform: translate(-50%) skewX(-10deg) rotateZ(10deg);
+    left: 50%;
+  }
+}
+
+ .card .address{
+   color: white;
+   border: none;
+   font-size: 10px;
+ }
+ .card .card-name{
+   font-family: 'playfair display', sans-serif;
+  color: white;
+  border: none;
+  font-size: 40px;
+ }
+ .bar{
+   position: absolute;
+   right: 0;
+   top: 70%;
+   width: 100px;
+ }

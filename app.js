@@ -50,7 +50,25 @@ clientBtnHome.addEventListener("click", function () {
   );
 });
 
+// ANIMATION WHITEMID
 
+const whiteMid = document.querySelector('.white-mid')
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 1400) {
+    whiteMid.style.animation = 'white-mid 1s ease forwards'
+  }
+
+})
+// ANIMATION CARD
+
+const card = document.querySelector('.card')
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 1400) {
+    card.style.animation = 'card 1.5s ease forwards '
+  }
+})
 
 
 
