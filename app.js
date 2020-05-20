@@ -24,6 +24,7 @@ const clientPage = document.querySelector(".client");
 // ALL BUTTONS IN CLIENT
 const homeBtnClient = document.querySelector(".home-btn-client");
 
+
 homeBtnClient.addEventListener("click", function () {
   const tl = new TimelineMax();
   tl.fromTo(
@@ -37,6 +38,8 @@ homeBtnClient.addEventListener("click", function () {
 // ALL BUTTONS IN HOME
 const clientBtnHome = document.querySelector(".client-btn-home");
 
+
+
 clientBtnHome.addEventListener("click", function () {
   const tl = new TimelineMax();
   tl.fromTo(
@@ -46,3 +49,10 @@ clientBtnHome.addEventListener("click", function () {
     { width: "100%", ease: Power2.easeInOut }
   );
 });
+
+
+
+
+
+
+
