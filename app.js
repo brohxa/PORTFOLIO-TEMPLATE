@@ -3,6 +3,7 @@ const hero = document.querySelector(".main");
 const nameText = document.querySelector(".name");
 const left = document.querySelector(".left");
 const surname = document.querySelector(".surname");
+
 const tl = new TimelineMax();
 
 tl.fromTo(left, 2, { width: "0px" }, { width: "25%", ease: Power2.easeInOut })
