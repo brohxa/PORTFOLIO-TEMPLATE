@@ -29,3 +29,30 @@ hamburger.addEventListener('click', () => {
     }
 
 })
+
+// SCROLL SOCIAL
+
+const linkss = document.querySelectorAll('.link');
+
+for (let i = 0; i < linkss.length; i++) {
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 700 & window.scrollY < 1500) {
+            linkss[i].classList.add('activee')
+        }
+        else {
+            linkss[i].classList.remove('activee')
+        }
+    })
+}
+const line = document.querySelectorAll('.line');
+for (let i = 0; i < line.length; i++) {
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 900 & window.scrollY < 1500) {
+            line[i].classList.add('active')
+        }
+        else {
+            line[i].classList.remove('active')
+        }
+    })
+}
+
