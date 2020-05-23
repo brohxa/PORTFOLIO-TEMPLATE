@@ -41,9 +41,9 @@ body{
     font-family: 'oswald', sans-serif;
     font-size: 100px;
     color: rgb(0, 0, 0);
-    right: 55%;
+    left: 5vw;
     top: 50%;
-    transform: translate(-50%);
+
     letter-spacing: 5px;
 }
 .big-letter::before{
@@ -689,7 +689,7 @@ transition: 1s;
     top: 10%;
     left: 50%;
     width: 750px;
-    height: 500px;
+    height: 400px;
     background-image: url('img/sand.png');
     background-repeat: repeat;
 }
@@ -698,7 +698,7 @@ transition: 1s;
     position: absolute;
     width: 80%;
     left: 50%;
-    top: 10%;
+    top: 20%;
     transform: translate(-50%,-50%);
     font-family: 'poppins', sans-serif;
     font-size: 15px;
@@ -709,7 +709,7 @@ transition: 1s;
     position: absolute;
     width: 80%;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%,-50%);
     font-family: 'poppins', sans-serif;
     font-size: 15px;
@@ -748,4 +748,322 @@ transition: 1s;
 .link.active{
 color: #fff;
 
+}
+/* CARD */
+.card{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    background-color: rgb(219, 219, 219);
+    width: 500px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 15px 20px -9px rgba(0,0,0,0.48);
+-moz-box-shadow: 10px 15px 20px -9px rgba(0,0,0,0.48);
+box-shadow: 10px 15px 20px -9px rgba(0,0,0,0.48);
+    height: 250px;
+}
+.card::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    left: 0;
+    
+    background-color: yellow;
+}
+.card::after{
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    border-radius: 100px;
+    transform: translate(50%,-50%);
+    right: 0;
+    -webkit-box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+-moz-box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+    background-color: rgb(31, 31, 31);
+}
+.card-logo{
+    position: absolute;
+    font-size: 80px;
+    font-family: 'Abril Fatface', sans-serif;
+    z-index: 1;
+} 
+
+/* SECTION 3 */
+
+.section3{
+   
+        position: absolute;
+        top: 300vh;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(224, 221, 221);
+    }
+
+    
+.heading3{
+    z-index: 1;
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    font-family: 'oswald', sans-serif;
+    color: rgb(19, 10, 10);
+    font-size: 35px;
+    font-weight: 900;
+}
+.heading3::before{
+    position: absolute;
+    content: 'PROJECTS 0003 ';
+font-family: 'poppins', sans-serif;
+font-weight: 500;
+font-size: 12px;
+top: 100%;
+}
+.heading3::after{
+    position: absolute;
+    content: '0000 s';
+    width: 100px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+font-family: 'poppins', sans-serif;
+font-weight: 500;
+font-size: 12px;
+top: 120%;
+}
+
+.section3 .box-third{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    transition: .5s;
+}
+.section3 .box-third img{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.section3 .image1{
+transition: .3s;
+    left: 50%;
+}
+
+.cover-third{
+    position: absolute;
+    background-color: rgb(20, 56, 66);
+    width: 200px;
+    height: 500px;
+    z-index: 1;
+    box-shadow: 3px 3px 10px 3px black;
+    left: 5%;
+transition: 1s;
+}
+
+.cover-third p{
+    width: 100%;
+    position: absolute;
+    transform: rotateZ(-90deg);
+    font-family: 'poppins';
+    top: 50%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.cover-third span{
+   font-size: 20px;
+   letter-spacing: 10px;
+   font-weight: 900;
+}
+
+.cover-third .date{
+    position: absolute;
+    font-family: 'oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    left: 10%;
+    top: 5%;
+    color: rgb(255, 255, 255);
+}
+.cover-third .date::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    top: 100%;
+}
+
+.box-third:hover .cover-third{
+    left: 0;
+    background-color: rgb(14, 21, 43);
+}
+.big-box3{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 750px;
+    height: 400px;
+    background-color: black;
+    background-repeat: repeat;
+    overflow: hidden;
+    -webkit-box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+    -moz-box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+    box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+}
+
+.big-box3 h1{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    color: white;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 10px;
+}
+.big-box3 p{
+    position: absolute;
+    width: 80%;
+    color: white;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.big-box3 img{
+    width: 400px;
+    object-fit: cover;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top:70%;
+    transform: translate(-50%,-50%);
+}
+.card3{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    background-color: rgb(141, 141, 141);
+    width: 500px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 15px 20px -9px rgba(0,0,0,0.48);
+-moz-box-shadow: 10px 15px 20px -9px rgba(0,0,0,0.48);
+box-shadow: 10px 15px 20px -9px rgba(0,0,0,0.48);
+    height: 250px;
+}
+.card3::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50%;
+    left: 0;
+    
+    background-color: rgb(27, 28, 29);
+}
+.card3::after{
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    border-radius: 100px;
+    transform: translate(50%,-50%);
+    right: 0;
+    -webkit-box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+-moz-box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+box-shadow: -9px 3px 38px -1px rgba(0,0,0,0.48);
+    background-color: rgb(255, 255, 255);
+}
+/* FORM */
+
+form .email {
+    border: none;
+    width: 300px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    font-size: 15px;
+    font-family: "poppins", sans-serif;
+    transform: translate(0%, -50%);
+    height: 40px;
+  }
+  form .submit {
+    width: 100px;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "poppins", sans-serif;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 17px;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+  }
+  .subscribe-logo{
+     position: absolute;
+      font-family: 'oswald',sans-serif;
+      font-size: 23px;
+      left: 5%;
+      color: rgb(255, 255, 255);
+      top: 5%;
+      z-index: 2;
+  }
+  
+.scroll-down3{
+    position: absolute;
+    width: 20px;
+    height: 150px;
+    top: 80%;
+    left: 94%;
+
+}
+.scroll-down3 a{
+    display: block;
+    color: black;
+    letter-spacing: 5px;
+margin-left: 20px;
+font-weight: 600;
+    font-size: 13px;
+    font-family: 'poppins',sans-serif;
+   transform: rotateZ(-90deg);
+}
+
+.scroll-down3::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 130px;
+    transform: translateX(50%);
+    background-color: rgb(2, 2, 2);
+    right: 0;
+    bottom: 0;
+}
+.arrow3{
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    top: 12%;
+    left: 59%;
+    background-color: rgb(0, 0, 0);
+    transform: rotateZ(45deg);
+
+}
+html{
+    scroll-behavior: smooth;
 }

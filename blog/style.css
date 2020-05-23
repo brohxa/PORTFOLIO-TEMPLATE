@@ -366,6 +366,7 @@ background-image: url('img/title1.jpg');
 .latest p{
     font-weight: 100;
     font-size: 14px;
+    padding: 0px;
 }
 .latest .date{
     font-size: 18px;
