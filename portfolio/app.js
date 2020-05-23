@@ -1,58 +1,29 @@
-let hamburger = document.querySelector('.hamburger')
-let sidebar = document.querySelector('.sidebar')
-let links = document.querySelectorAll('.link');
-let line1 = document.querySelector('.line1')
-let line2 = document.querySelector('.line2')
-let line3 = document.querySelector('.line3')
+let hamburber = document.querySelector('.hamburger');
+let sidebar = document.querySelector('.sidebar');
 
-let menuOpen = false;
-hamburger.addEventListener('click', () => {
-    if (!menuOpen) {
-        sidebar.style.animation = 'sidebar .5s forwards '
-        line1.style.animation = 'line1cross .5s forwards '
-        line2.style.animation = 'line2cross .5s forwards '
-        line3.style.animation = 'line3cross .5s forwards '
-        menuOpen = true;
-        for (let i = 0; i < links.length; i++) {
-            links[i].style.animation = 'links 1s forwards '
-        }
+let menu = false;
+hamburber.addEventListener('click', function () {
+    if (!menu) {
+        sidebar.style.animation = 'sidebar .5s ease forwards';
+        menu = true;
     }
     else {
-        sidebar.style.animation = 'sidebarback .5s forwards'
-        line1.style.animation = 'line1crossback .3s forwards '
-        line2.style.animation = 'line2crossback .1s forwards '
-        line3.style.animation = 'line3crossback .3s forwards '
-        menuOpen = false;
-        for (let i = 0; i < links.length; i++) {
-            links[i].style.animation = 'linksback 1s forwards '
-        }
-    }
+        sidebar.style.animation = 'sidebarback .5s ease forwards'
 
+        menu = false;
+    }
 })
 
-// SCROLL SOCIAL
+// TIMELINE MAX
 
-const linkss = document.querySelectorAll('.link');
+const right = document.querySelector('.right');
+const nameText = document.querySelector(".name");
+const subText = document.querySelector(".sub-name");
+const bigText = document.querySelector(".big-letter");
+const graybox = document.querySelector(".gray-box");
+const tl = new TimelineMax();
+const tl2 = new TimelineMax();
 
-for (let i = 0; i < linkss.length; i++) {
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 700 & window.scrollY < 1500) {
-            linkss[i].classList.add('activee')
-        }
-        else {
-            linkss[i].classList.remove('activee')
-        }
-    })
-}
-const line = document.querySelectorAll('.line');
-for (let i = 0; i < line.length; i++) {
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 900 & window.scrollY < 1500) {
-            line[i].classList.add('active')
-        }
-        else {
-            line[i].classList.remove('active')
-        }
-    })
-}
+tl.fromTo(right, 2, { width: "30%" }, { width: "50%", ease: Power2.easeInOut }).fromTo(nameText, 1, { y: "-50", opacity: 0 }, { y: "0", opacity: 1 });
+tl2.fromTo(bigText, 2, { y: "-50", opacity: 0 }, { y: "0", opacity: 1 }).fromTo(graybox, 2, { width: "0px", opacity: 0 }, { width: "250px", opacity: 1 });
 
