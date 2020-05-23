@@ -27,3 +27,12 @@ const tl2 = new TimelineMax();
 tl.fromTo(right, 2, { width: "30%" }, { width: "50%", ease: Power2.easeInOut }).fromTo(nameText, 1, { y: "-50", opacity: 0 }, { y: "0", opacity: 1 });
 tl2.fromTo(bigText, 2, { y: "-50", opacity: 0 }, { y: "0", opacity: 1 }).fromTo(graybox, 2, { width: "0px", opacity: 0 }, { width: "250px", opacity: 1 });
 
+// SCROLL HAMBUREGER
+
+const cover = document.querySelector('.cover');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 600 & window.scrollY < 1500) {
+        cover.classList.add('active');
+    }
+})
