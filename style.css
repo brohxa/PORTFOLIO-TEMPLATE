@@ -310,7 +310,7 @@ z-index: 2;
   font-weight: 100;
   line-height: 60px;
   font-family: "poppins", sans-serif;
-  color: white;
+  color: rgb(255, 253, 253);
   transition: .3s;
 }
 .mywebsite::before{
@@ -320,7 +320,7 @@ z-index: 2;
   height: 1px;
   top: 50%;
   transform: translateX(-80%);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 
   transition: .3s;
 }
@@ -331,7 +331,7 @@ z-index: 2;
   width: 1px;
   top: 70%;
   left: 30%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(2, 2, 2);
 
   transition: .3s;
 }
@@ -486,12 +486,13 @@ z-index: -1;
   }
 .mywebsite:hover a{
   color:black;
- background-color: white;
+ background-color: rgb(255, 255, 255);
   }
 
 
 @media all and (max-width: 1700px) {
   .about .about-image {
+    width: 100%;
     opacity: 0.3;
   }
 }
@@ -759,8 +760,16 @@ z-index: -1;
 }
 
 /* MEDIA CLIENT */
+@media all and (max-width: 1628px){
+  .social,.social-logo{
+    position: absolute;
+  }
+}
 
 @media all and (max-width: 1628px) {
+  .about-back{
+   opacity: 0;
+  }
   .client-text {
     min-width: 600px;
 
@@ -1170,3 +1179,318 @@ position: absolute;
    left: 60%;
  }
  
+/* MEDIA */
+@media all and (max-width:1628px){
+  
+
+
+
+.strip-left img{
+
+  height: 500px;
+
+}
+
+.collags{
+  min-width: 30vw;
+  height: 70%;
+ 
+  left: 60%;
+  top: 10%;
+ 
+}
+
+.collag2{
+
+  left: 60%;
+}
+.collag3{
+ font-size: 50px;
+  left: 20%;
+}
+.collag5{
+  font-size: 36px;
+ 
+   top: 74%;
+ }
+}
+@media all and (max-width:1450px){
+
+
+.collag2{
+
+  left: 60%;
+}
+.collag3{
+ font-size: 50px;
+  left: 10%;
+}
+.collag5{
+  font-size: 36px;
+ 
+   top: 76%;
+ }
+}
+@media all and (max-width:1250px){
+
+
+.collag1{
+
+ font-size: 40px;
+}
+.collag2{
+
+  left: 50%;
+}
+.collag3{
+ font-size: 40px;
+  left: 10%;
+}
+.collag5{
+
+ left: 50%;
+  
+ }
+}
+@media all and (max-width:1123px){
+
+.strip-left{
+  display: none;
+}
+.about-extra .white-mid{
+ animation: none !important;
+ width: 50%;
+ left: 5%;
+}
+.collag2{
+
+  left: 50%;
+  font-size: 50px;
+}
+.collag5{
+
+  left: 55%;
+   
+  }
+}
+@media all and (max-width:1024px){
+
+.collags{
+  height: 40vh;
+}
+.collag2{
+
+  left: 56%;
+   
+  }
+  .about-extra .white-mid{
+    
+   height: 50%;
+   }
+.about-image{
+  width: 100%;
+  height: 100%;
+}
+}
+@media all and (max-width:1022px){
+
+.collags{
+  height: 40vh;
+}
+.collag2{
+font-size: 30px;
+  left: 68%;
+   
+  }
+.collag5{
+font-size: 25px;
+  left: 60%;
+   top: 70%;
+  }
+.collag1{
+font-size: 30px;
+
+   
+  }
+.collag3{
+font-size: 30px;
+ top: 40%;
+   
+  }
+.collag4{
+font-size: 30px;
+ 
+   
+  }
+  .about-extra .white-mid{
+    
+   height: 85%;
+   }
+.card-logo{
+  display: none;
+}
+.white-mid h6 {
+ 
+margin-left: 55%;
+
+}
+}
+@media all and (max-width:768px){
+
+
+  .about-extra .white-mid{
+    width: 60%;
+   height: 65%;
+   left: 2vh;
+   }
+.card-logo{
+  display: none;
+}
+.white-mid h6 {
+ 
+margin-left: 55%;
+
+}
+.collag2{
+  font-size: 30px;
+    left: 63%;
+     
+    }
+    .collags{
+      left: 65%;
+    }
+    .social{
+      position: absolute;
+    }
+    .social-logo{
+      position: absolute;
+    }
+}
+@media all and (max-width:687px){
+
+
+  .about-extra .white-mid{
+    width: 90%;
+   height: 65%;
+   left: 50%;
+   transform: translate(-50%);
+   }
+.card-logo{
+  display: none;
+}
+.white-mid h6 {
+ 
+margin-left: 55%;
+
+}
+.collag2{
+  font-size: 30px;
+    left: 78%;
+    top: 40%;
+     
+    }
+.collag5{
+  font-size: 20px;
+  top: 60%;
+  
+     
+    }
+    .collags{
+      width: 400px;
+      height: 180px;
+      left: 50%;
+      transform: translate(-50%);
+      top: 75%;
+    }
+    .social{
+      position: absolute;
+    }
+    .social-logo{
+      position: absolute;
+    }
+}
+@media all and (max-width:480px){
+.card{
+  width: 400px;
+  height: 230px;
+}
+.collags{
+  width: 300px;
+  
+}
+.collag2{
+  font-size: 25px;
+    left: 76%;
+     
+    }
+  .collag5{
+  font-size: 20px;
+    left: 60%;
+     top: 60%;
+    }
+  .collag1{
+  font-size: 20px;
+  
+     
+    }
+  .collag3{
+  font-size: 20px;
+   top: 40%;
+     
+    }
+  .collag4{
+  font-size: 25px;
+   
+     
+    }
+}
+@media all and (max-width:414px){
+.card{
+  width: 350px;
+  height: 210px;
+}
+.about-extra .white-mid{
+  width: 95%;
+ }
+.about-extra .white-mid h6{
+  left: -5%;
+ }
+ .collags{
+  top: 72%; 
+    }
+}
+@media all and (max-width:350px){
+.card{
+  width: 300px;
+  height: 180px;
+}
+.about-extra .white-mid{
+  width: 95%;
+ }
+.about-extra .white-mid h6{
+ display: none;
+ }
+ .collags{
+  top: 72%; 
+    }
+    .collag5{
+    
+         top: 45%;
+        }
+    .collag2{
+    
+        font-size: 23px;
+        color: rgb(161, 71, 71);
+        left: 70%;
+        }
+        .mywebsite{
+          width: 150px;
+          height: 50px;
+          top: 85%;
+        
+        }
+        .mywebsite a{
+          font-size: 18px;
+          line-height: 50px;
+        }
+}
