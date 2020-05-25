@@ -1855,8 +1855,9 @@ top: 115%;
     height: 180px;
 }
 .section2 .big-box p{
-top: 14vh;
+top: 16vh;
 }
+
 .section3 .big-box3{
     width: 280px;
     height: 180px;
@@ -1885,6 +1886,20 @@ top: 14vh;
 }
 .card3 .subscribe-logo{
     font-size: 20px;
+}
+.section2 .box-second .date{
+    font-size: 20px;
+}
+.section3 .box-third .date{
+    font-size: 20px;
+}
+.card::after{
+    width: 30px;
+    height: 30px;
+}
+.card3::after{
+    width: 30px;
+    height: 30px;
 }
 }
 

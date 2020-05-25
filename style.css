@@ -1494,3 +1494,118 @@ margin-left: 55%;
           line-height: 50px;
         }
 }
+
+@media (orientation: landscape) and (max-width:1024px){
+
+  .about-extra .white-mid{
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+   }
+   .collags{
+     width: 70%;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%);
+   }
+   .collag2{
+     font-size: 45px;
+     top: 32%;
+     left: 82%;
+   }
+   .collag5{
+     top: 50%;
+   }
+}
+@media (orientation: landscape) and (max-width:1020px){
+
+ 
+   .collags{
+    display: none;
+   }
+ 
+}
+@media (orientation: landscape) and (max-width:812px){
+
+  .about-extra .white-mid{
+    width: 95%;
+    border-radius: 20px;
+    height: 90%;
+    left: 50%;
+    transform: translate(-50%);
+   }
+   .collags{
+     display: none;
+   }
+   .about-extra .white-mid .copyright{
+  
+    left: 18%;
+  
+   }
+   .social-logo{
+     width: 70px;
+     height: 25px;
+     line-height: 25px;
+     font-size: 12px;
+   }
+   .about .load-text{
+     font-size: 15px;
+     padding-top: 20px;
+     border-bottom: none;
+   }
+   .card{
+     width: 400px;
+     height: 200px;
+     left: 50%;
+ 
+   }
+   .mywebsite{
+     width: 160px;
+     height: 40px;
+   
+   }
+   .mywebsite a{
+    font-size: 17px;
+    line-height: 40px;
+   }
+   .about .contact{
+     font-size: 15px;
+   }
+   .white{
+     display: none;
+   }
+   .right .name {
+ 
+    font-size: 40px;
+    top: 50%;
+    left: 40%;
+ 
+  }
+ .left .typewriter{
+   font-size: 20px;
+ }
+ .feather{
+   top: 6vh !important;
+   font-size: 25px !important;
+ }
+ .feather1,.feather2,.feather3{
+   display: none !important;
+ }
+ .social-logo{
+   top: 30%;
+ }
+ .soc{
+   font-size: 13px;
+ }
+ .mywebsite::before{
+   width: 60px;
+ }
+}
+
+@media (orientation: landscape) and (max-width:568px){
+  .card{
+    width: 340px;
+    height: 180px;
+  }
+}
+
