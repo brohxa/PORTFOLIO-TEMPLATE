@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- SCROLL DOWN -->
+    <div class="scroll-down">
+        <p>CLICK</p>
+        <span class="arrow"></span>
+    </div>
+    <!-- BURGER -->
+    <div class="hamburger">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="../index.html" class="link">HOME</a></li>
+            <li><a href="../blog/index.html" class="link">BLOG</a></li>
+            <li><a href="../portfolio/index.html" class="link">PORTFOLIO</a></li>
+
+            <li><a href="#" class="link">CREDITS</a></li>
+        </ul>
+    </div>
+    <form role="form" action="contact.php" method="post">
+        <input class="mail" name="mail" required="required" type="email" placeholder="Email*" />
+        <input class="name" name="name" required="required" type="name" placeholder="Your name*" />
+        <br />
+        <textarea class="text" name="message" placeholder="Enter Any Message"></textarea>
+        <br />
+        <input class="submit" name="submit" type="submit" value="Send" />
+    </form>
+    <!-- OTHER INFO -->
+    <div class="info">
+        <div class="email">
+            <h6>Email</h6>
+            <p>ankit@brohxa.com</p>
+            <i class="fas fa-paper-plane"></i>
+        </div>
+        <div class="address">
+            <h6>Address</h6>
+            <p>Bangalore, India</p>
+            <i class="fas fa-map-marked"></i>
+        </div>
+        <div class="phone">
+            <h6>Phone</h6>
+            <p>91+ 88833300222</p>
+            <i class="fas fa-phone-square-alt"></i>
+        </div>
+    </div>
+    <h1 class="heading">CONTACT</h1>
+    <div class="number">0000 8888 3333</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

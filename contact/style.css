@@ -1,0 +1,916 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(24, 23, 23);
+}
+
+
+/* HAMBURGER */
+
+
+.hamburger{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+cursor: pointer;
+    left: 2vw;
+    top: 2vh;
+    z-index: 1;
+    transition: .2s;
+}
+.hamburger .line{
+  z-index: 3;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+   
+}
+.line1  {  
+    width: 30px;
+    position: absolute;
+    top: 20%;
+    animation: line1 1s infinite;
+}
+.line2  {  
+    width: 20px;
+    position: absolute;
+    top: 40%;
+    animation: line2 .6s infinite;
+}
+.hamburger .line3  {  
+    width: 25px;
+    position: absolute;
+    top: 60%;
+    animation: line3 .8s infinite;
+}
+
+
+
+.sidebar{
+    font-family: 'poppins', sans-serif;
+    transform: translateX(-160%);
+    top: 10%;
+    left: 2vw;
+    z-index: 5;
+    position: absolute;
+  
+}
+
+@keyframes sidebar{
+    from{
+      opacity: 0;
+        transform: translateX(-160%) ;
+    }
+    to{ opacity: 1;
+        transform: translateX(0%) ;
+      
+    }
+}
+@keyframes sidebarback{
+    from{
+        opacity: 1;
+        transform: translateX(0%) ;
+    }
+    to{ opacity: 0;
+        transform: translateX(-160%);
+       
+    }
+}
+.sidebar a{
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+    
+    font-weight: 400;
+    transition: .2s;
+    line-height: 30px;
+}
+.sidebar a:hover{
+    font-size: 19px;
+}
+
+/* LINE ANIMATION */
+
+@keyframes line1{
+    0%{
+        width: 30px;
+
+    }
+    50%{
+        width: 0px;
+    }
+    100%{
+        width: 30px;
+    }
+}
+@keyframes line2{
+    0%{
+        width: 20px;
+
+    }
+    50%{
+        width: 0px;
+    }
+    100%{
+        width: 20px;
+    }
+}
+@keyframes line3{
+    0%{
+        width: 25px;
+
+    }
+    50%{
+        width: 0px;
+    }
+    100%{
+        width: 25px;
+    }
+}
+
+/* FORM */
+
+
+
+form{
+    width: 40%;
+    height: 40vh;
+    background-color: rgb(14, 13, 13);
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+.mail{
+    width: 35%;
+    position: absolute;
+    left: 67%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-bottom: 1px rgb(60, 255, 0) solid;
+    background: none;
+    color: rgb(168, 167, 167);
+ font-family: 'poppins';
+ font-size: 14px;
+}
+.name{
+    width: 33%;
+    position: absolute;
+    left: 32%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-bottom: 1px rgb(60, 255, 0) solid;
+    background: none;
+    color: rgb(168, 167, 167);
+ font-family: 'poppins';
+ font-size: 14px;
+}
+.submit{
+    cursor: pointer;
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    color: white;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-bottom: 1px gray solid;
+    background: none;
+ font-family: 'poppins';
+ font-size: 18px;
+}
+.text{
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    color: rgb(168, 167, 167);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    border: 1px solid gray;
+  border-radius: 10px;
+    background: none;
+ font-family: 'poppins';
+ font-size: 14px;
+ padding: 20px;
+}
+
+.scroll-down{
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    top: 1vh;
+    left: 2vw;
+
+}
+.scroll-down p{
+    letter-spacing: 5px;
+margin-left: 20px;
+font-weight: 600;
+    font-size: 13px;
+    font-family: 'poppins',sans-serif;
+    transform: rotateZ(0deg);
+    color: white;
+    left: 140%;
+    top: 50%;
+    position: absolute;
+}
+
+.scroll-down::before{
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    transform: translateX(50%);
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    bottom: 0;
+}
+.arrow{
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    top: 77%;
+    left: 61%;
+    background-color: rgb(255, 255, 255);
+    transform: rotateZ(-45deg);
+
+}
+
+.info{
+    position: absolute;
+    width: 13%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 90%;
+    height: 80%;
+  
+    border-radius: 20px;
+    background-color: black;
+}
+
+.email .fas{
+position: absolute;    
+left: 50%;
+top: 10%;
+transform: translate(-50%);
+color: rgb(255, 255, 255);
+font-size: 25px;
+}
+ .email p{
+position: absolute;    
+left: 50%;
+top: 25%;
+transform: translate(-50%,-50%);
+text-align: center;
+width: 90%;
+color: white;
+font-size: 18px;
+font-family: 'poppins', sans-serif;
+}
+ .email h6{
+position: absolute;    
+left: 50%;
+top: 20%;
+transform: translate(-50%);
+color: rgb(165, 164, 164);
+font-weight: 100;
+font-size: 18px;
+font-family: 'poppins', sans-serif;
+}
+/* ADDRESS */
+
+.address .fas{
+position: absolute;    
+left: 50%;
+top: 45%;
+transform: translate(-50%);
+color: white;
+font-size: 25px;
+}
+ .address p{
+position: absolute;    
+left: 50%;
+top: 60%;
+transform: translate(-50%,-50%);
+color: white;
+font-size: 18px;
+text-align: center;
+width: 90%;
+font-family: 'poppins', sans-serif;
+}
+ .address h6{
+position: absolute;    
+left: 50%;
+top: 55%;
+transform: translate(-50%);
+color: rgb(165, 164, 164);
+font-weight: 100;
+font-size: 18px;
+font-family: 'poppins', sans-serif;
+}
+
+/* PHONE */
+
+.phone .fas{
+position: absolute;    
+left: 50%;
+top: 75%;
+transform: translate(-50%);
+color: white;
+font-size: 25px;
+}
+ .phone p{
+position: absolute;    
+left: 50%;
+top: 90%;
+transform: translate(-50%,-50%);
+color: white;
+font-size: 18px;
+text-align: center;
+width: 90%;
+font-family: 'poppins', sans-serif;
+}
+ .phone h6{
+position: absolute;    
+left: 50%;
+top: 85%;
+transform: translate(-50%);
+color: rgb(165, 164, 164);
+font-weight: 100;
+font-size: 18px;
+font-family: 'poppins', sans-serif;
+}
+
+.heading{
+    font-family: 'poppins', sans-serif;
+    color: rgb(165, 164, 164);
+    left: 50%;
+position: absolute;
+top: 30%;
+font-size: 30px;
+transform: translate(-50%,-50%);
+}
+
+.heading::before{
+    content: 'Contact Us Any Time We Are Ready To Serve You';
+   
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 15px;
+    width: 500px;
+    font-weight: 100;
+}
+
+.number{
+    position: absolute;
+    font-family: 'poppins', sans-serif;
+    color: rgb(165, 164, 164);
+    left: -2vw;
+    top: 90%;
+    transform: rotateZ(90deg);
+}
+
+@media all and (max-width:1421px){
+    .info{
+        width: 20%;
+        left: 88%;
+    }
+    form{
+        width: 50%;
+    }
+}
+@media all and (max-width:1024px){
+    .info{
+        height: 50%;
+        width: 25%;
+        left: 85%;
+        top: 35%;
+    }
+    form{
+        top: 40%;
+        left: 40%;
+        width: 50%;
+    }
+    .heading{
+        top: 15%;
+        left: 40%;
+    }
+    .sidebar{
+        top: 5%;
+    }
+    .number{
+        top: 50%;
+        left: -5%;
+    }
+}
+@media all and (max-width:1023px){
+    .info{
+        top: 50%;
+        height: 80%;
+    }
+    .sidebar{
+        top: 10%;
+    }
+    .number{
+        top: 80%;
+        left: -5%;
+    }
+    form{
+        top: 70%;
+        width: 60%;
+    }
+    .heading{
+        top: 40%;
+    }
+}
+@media all and (max-width:768px){
+    .info{
+        top: 50%;
+        height: 60%;
+    }
+    .info p{
+        margin-top: 20px;
+font-size: 13px;
+    }
+    .sidebar{
+        top: 10%;
+    }
+    .number{
+        top: 70%;
+        left: -5%;
+    }
+    form{
+        top: 50%;
+        width: 60%;
+    }
+    .heading{
+        top: 22%;
+    }
+}
+@media all and (max-width:728px){
+    form{
+        top: 50%;
+        left: 50%;
+        width: 80%;
+    }
+    .heading{
+      left: 50%;
+    }
+.info{
+    width: 80%;
+    height: 20vh;
+    left: 50%;
+grid-template-columns: repeat(3, 1fr);
+    top: 85%;
+}
+.email h6{
+    left: 20%;
+    top: 10%;
+}
+.address h6{
+    left: 50%;
+    top: 10%;
+}
+.phone h6{
+    left: 80%;
+    top: 10%;
+}
+.email p{
+    left: 20%;
+    top: 30%;
+}
+.address p{
+    
+    left: 50%;
+    top: 30%;
+}
+.phone p{
+    left: 80%;
+    top: 30%;
+}
+.email .fas{
+    left: 20%;
+    top: 60%;
+}
+.address .fas{
+    left: 50%;
+    top: 60%;
+}
+.phone .fas{
+    left: 80%;
+    top: 60%;
+}
+.email,.address,.phone p{
+    width: 100px;
+}
+.heading::before{
+    width: 400px;
+    display: block;
+}
+}
+@media all and (max-width:600px){
+    .text{
+        width: 90%;
+    }
+    .name{
+        left: 20vw;
+        width: 40%;
+    }
+    .mail{
+      left: 57vw;
+        width: 45%;
+    }
+}
+@media all and (max-width:530px){
+    form{
+        top: 60vh;
+    }
+    .heading{
+        top: 30vh;
+    }
+    .info{
+        height: 80vh;
+        top: 125vh;
+    }
+  body{
+      height: 170vh;
+  }
+.email .fas{
+    position: absolute;    
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    }
+     .email p{
+    position: absolute;    
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+    color: white;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    }
+     .email h6{
+    position: absolute;    
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    color: rgb(165, 164, 164);
+    font-weight: 100;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    }
+    /* ADDRESS */
+    
+    .address .fas{
+    position: absolute;    
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 25px;
+    }
+     .address p{
+    position: absolute;    
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+    font-family: 'poppins', sans-serif;
+    }
+     .address h6{
+    position: absolute;    
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%);
+    color: rgb(165, 164, 164);
+    font-weight: 100;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    }
+    
+    /* PHONE */
+    
+    .phone .fas{
+    position: absolute;    
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 25px;
+    }
+     .phone p{
+    position: absolute;    
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+    font-family: 'poppins', sans-serif;
+    }
+     .phone h6{
+    position: absolute;    
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%);
+    color: rgb(165, 164, 164);
+    font-weight: 100;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    }
+    .sidebar a{
+        font-size: 15px;
+        line-height: 2px;
+        top: 0vh;
+    }
+    .number{
+        left: -10vw;
+    }
+}
+
+
+
+@media all and (max-width:414px){
+.info{
+    width: 95%;
+}
+.heading{
+    text-align: center;
+    width: 80%;
+    
+
+}
+.heading::before{
+    text-align: center;
+    width: 70%;
+    font-size: 13px;
+    
+
+}
+form{
+    width: 95%;
+}
+.number{
+    display: none;
+}
+.mail{
+    left: 71vw;
+    width: 45%;
+}
+.name{
+    left: 23vw;
+    width: 45%;
+}
+.text{
+    width: 95%;
+}
+}
+
+@media all and (max-width:350px){
+.info{
+    width: 95%;
+    height: 70%;
+    top: 130vh;
+}
+form{
+   
+    top: 72vh;
+}
+.heading{
+    font-size: 20px;
+    top: 40vh;
+}
+.heading::before{
+    width: 90%;
+}
+.text{
+    padding: 3px;
+    font-size: 13px;
+}
+}
+
+@media (orientation: landscape) and (max-width:1366px){
+
+.info{
+    height: 70%;
+    top: 45vh;
+}
+form{
+left: 45%;
+top: 60%;
+}
+.heading{
+    left: 45%;
+    
+}
+}
+@media (orientation: landscape) and (max-width:1366px){
+
+.info{
+    height: 90%;
+    top: 50vh;
+}
+form{
+left: 45%;
+top: 60%;
+}
+.heading{
+    left: 45%;
+    top: 30vh;
+}
+}
+@media (orientation: landscape) and (max-width:1366px){
+
+.info{
+    width: 20%;
+    height: 90%;
+    left: 87%;
+    top: 50vh;
+}
+.info h6{
+    font-size: 13px;
+}
+.info p{
+   font-size: 13px;
+margin-top: 20px;
+}
+.sidebar a{
+    font-size: 14px;
+
+}
+.number{
+    font-size: 13px;
+    left: -10vh;
+}
+form{
+left: 45%;
+height: 60%;
+top: 65%;
+}
+.heading{
+    left: 45%;
+    top: 20vh;
+    font-size: 20px;
+}
+
+}
+
+@media (orientation:landscape) and (max-width:720px){
+   form{
+width: 70%;
+left: 40%;
+   }
+   .heading{
+       left: 40%;
+   }
+.email .fas{
+    position: absolute;    
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    }
+     .email p{
+    position: absolute;    
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+    color: white;
+    font-size: 12px;
+    font-family: 'poppins', sans-serif;
+    }
+     .email h6{
+    position: absolute;    
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    color: rgb(165, 164, 164);
+    font-weight: 100;
+    font-size: 12px;
+    font-family: 'poppins', sans-serif;
+    }
+    /* ADDRESS */
+    
+    .address .fas{
+    position: absolute;    
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 25px;
+    }
+     .address p{
+    position: absolute;    
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 90%;
+    font-family: 'poppins', sans-serif;
+    }
+     .address h6{
+    position: absolute;    
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%);
+    color: rgb(165, 164, 164);
+    font-weight: 100;
+    font-size: 12px;
+    font-family: 'poppins', sans-serif;
+    }
+    
+    /* PHONE */
+    
+    .phone .fas{
+    position: absolute;    
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 25px;
+    }
+     .phone p{
+    position: absolute;    
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 90%;
+    font-family: 'poppins', sans-serif;
+    }
+     .phone h6{
+    position: absolute;    
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%);
+    color: rgb(165, 164, 164);
+    font-weight: 100;
+    font-size: 12px;
+    font-family: 'poppins', sans-serif;
+    }
+    
+}
+@media (orientation:landscape) and (max-width:568px){
+form .mail{
+    width: 40%;
+    left: 74%;
+}
+form{
+    height: 80%;
+    width: 60%;
+    left: 45%;
+    top: 55vh;
+
+}
+.name{
+    left: 26%;
+}
+.info p{
+    font-size: 10px;
+}
+.sidebar a{
+    font-size: 12px;
+    line-height: 2px;
+}
+.heading{
+    top: 7vh;
+    left: 45%;
+}
+.heading::before{
+display: none;
+}
+.scroll-down{
+    display: none;
+}
+}
