@@ -11,6 +11,7 @@
       width: 100%;
       height: 200vh;
       background-color: rgb(255, 255, 255);
+
   }
 
   .hamburger{
@@ -726,7 +727,9 @@ transition: .4s;
 
 
 @media all and (max-width:1500px){
-    
+  .hamburger,.sidebar{
+      display: none;
+  }
   
     .sidebar .link{
         color: rgb(0, 0, 0);
@@ -742,8 +745,8 @@ transition: .4s;
     }
     .titlebox{
         transform: translate(-50%,-50%);
-        width: 80vw;
-        top: 50%;
+        width: 95%;
+        top: 60%;
         left: 50%;
         height: 70vh;
     }
@@ -778,46 +781,58 @@ transition: .4s;
      
      
     }
-}
-
-@media all and (max-width:1500px){
-
     .layer2-second{
-      display: none;
-    }
-    .more-post{
         display: none;
-    }
-    .layer2{
-        width: 95%;
+      }
+      .more-post{
+          display: none;
+      }
+      .layer2{
+          width: 95%;
+      }
+}
+@media all and (max-width:1700px){
+    .blog-date span{
+
+        font-size: 25px;
+     }
+    .blog-date {
+
+        top: 90%;
+     }
+     .img-container:hover .latest{
+        opacity: 1;
+        top: 50%;
     }
 }
+
+
 @media all and (max-width:1270px){
 
- .blog-date span{
 
-    font-size: 25px;
- }
-
- .blog-date{
-
- }
  .sidebar{
      top: 5%;
  }
  .logo .fas{
      display: none;
  }
+ .blog-location{
+
+    padding: 10px;
+    font-size: 18px;
+ 
 }
+.box h1{
+    font-size: 17px;
+}
+}
+
 @media all and (max-width:1008px){
 .box h1{
     font-size: 17px;
     
 }
-.img-container:hover .latest{
-    opacity: 1;
-    top: 50%;
-}
+
 .latest h1{
     font-size: 23px;
     margin-bottom: 20px;
@@ -853,11 +868,11 @@ transition: .4s;
     .box h1{
        font-size: 15px;
     }
-   .titlebox{
-       width: 95%;
-       top:60%;
-   }
-  
+
+   .blog-date{
+    font-size: 12px;
+    
+     }
 }
 @media all and (max-width:656px){
 
@@ -868,7 +883,7 @@ transition: .4s;
      }
  .blog-date span{
 
-    font-size: 15px;
+    font-size: 19px;
      }
      .box p{
          line-height: 14px;
@@ -890,19 +905,11 @@ transition: .4s;
 
 
 @media all and (max-width:566px){
-    .sidebar .link{ 
-        font-size: 13px;
-        line-height: 20px;
-        
-    }
-    .sidebar{
-        top: 8vh;
-    }
     .titlebox span{
         display: none;
     }
     body{
-        height: 300vh;
+        height: 350vh;
     }
     .section1{
       
@@ -951,7 +958,7 @@ transition: .4s;
     }
  
      .layer1{
-         width: 70%;
+         width: 80%;
         top: 4vh;
         gap: 2.5vh;
         height: 95%;
@@ -973,15 +980,15 @@ z-index: 3;
       
     }
     .box p{
-        font-size: 13px;
+        font-size: 15px;
        top: 60%;
     }
     .box h1{
-        font-size: 16px;
+        font-size: 18px;
        top: 45%;
     }
     .blog-date{
-        font-size: 14px;
+        font-size: 17px;
         top: 85%;
          }
     .blog-date span{
@@ -991,7 +998,7 @@ z-index: 3;
 }
 
 @media all and (max-width:458px){
-
+   
     
     .layer1{
      width: 95%;
@@ -1012,6 +1019,7 @@ z-index: 3;
     }
 }
 
+
 @media all and (max-width:328px){
 .img-container{
     display: none;
@@ -1028,7 +1036,6 @@ z-index: 3;
 
 body{
     height: 350vh;
-
 }
 .section1{
   
@@ -1040,5 +1047,18 @@ body{
     height: 180vh;
   
 }
+.blog-date{
+    font-size: 15px;
+    top: 90%;
+     }
+.blog-date span{
+    font-size: 20px;
 
+     }
+     .box h1{
+        font-size: 16px;
+    }
+     .box p{
+        font-size: 13px;
+    }
 }
