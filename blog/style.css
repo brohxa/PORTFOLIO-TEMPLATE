@@ -7,12 +7,10 @@
     list-style: none;
   }
 
-
   body{
       width: 100%;
       height: 200vh;
       background-color: rgb(255, 255, 255);
-      overflow-x: hidden;
   }
 
   .hamburger{
@@ -282,6 +280,7 @@ left: 2vw;
     top: 20vh;
     left: 55%;
     transform: translate(-50%);
+    overflow-x: hidden;
 }
 
 .welcome-text{
@@ -301,7 +300,7 @@ left: 2vw;
     overflow: hidden;
     animation: 10s slider infinite;
     background-image: url('img/title1.jpg');
-    
+    background-position: center;
 }
 
 @keyframes slider{
@@ -720,4 +719,326 @@ transition: .4s;
 .copyright{
     margin-top: 50px;
     font-weight: 900;
+}
+
+/* MEDIA */
+
+
+
+@media all and (max-width:1500px){
+    
+  
+    .sidebar .link{
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+        font-size: 20px;
+        letter-spacing: 0px;
+        font-size: 18px;
+       line-height: 30px;
+    }
+
+    .bigcross1,.bigcross2{
+        display: none;
+    }
+    .titlebox{
+        transform: translate(-50%,-50%);
+        width: 80vw;
+        top: 50%;
+        left: 50%;
+        height: 70vh;
+    }
+    .blog-title,.daily-title{
+        display: none;
+    }
+    .welcome-text{
+        font-size: 40px;
+    }
+    .titlebox .invite{
+       
+        font-size: 15px;
+        
+    }
+    .latest h1{
+  
+        font-size: 30px;
+      
+        
+    }
+    .latest p{
+     
+        font-size: 14px;
+  
+    }
+    .latest .date{
+        font-size: 18px;
+    
+    }
+    .layer1{
+        width: 95%;
+     
+     
+    }
+}
+
+@media all and (max-width:1500px){
+
+    .layer2-second{
+      display: none;
+    }
+    .more-post{
+        display: none;
+    }
+    .layer2{
+        width: 95%;
+    }
+}
+@media all and (max-width:1270px){
+
+ .blog-date span{
+
+    font-size: 25px;
+ }
+
+ .blog-date{
+
+ }
+ .sidebar{
+     top: 5%;
+ }
+ .logo .fas{
+     display: none;
+ }
+}
+@media all and (max-width:1008px){
+.box h1{
+    font-size: 17px;
+    
+}
+.img-container:hover .latest{
+    opacity: 1;
+    top: 50%;
+}
+.latest h1{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.layer1{
+    gap: 1vw;
+}
+.layer1 p{
+    font-size: 12px;
+}
+.box p{
+    padding: 10px;
+    top: 65%;
+}
+.box h1{
+    top: 55%;
+    padding: 10px;
+}
+.box .date{
+    padding: 10px;
+}
+.layer2{
+   
+    gap: 1vw;
+    
+    
+    }
+}
+
+@media all and (max-width:817px){
+
+    .box h1{
+       font-size: 15px;
+    }
+   .titlebox{
+       width: 95%;
+       top:60%;
+   }
+  
+}
+@media all and (max-width:656px){
+
+    
+ .blog-date{
+    font-size: 13px;
+    top: 93%;
+     }
+ .blog-date span{
+
+    font-size: 15px;
+     }
+     .box p{
+         line-height: 14px;
+     }
+     .titlebox .invite{
+     
+        font-size: 13px;
+       
+    
+    }
+     .titlebox .welcome-text{
+     
+        font-size: 33px;
+       
+    
+    }
+    
+}
+
+
+@media all and (max-width:566px){
+    .sidebar .link{ 
+        font-size: 13px;
+        line-height: 20px;
+        
+    }
+    .sidebar{
+        top: 8vh;
+    }
+    .titlebox span{
+        display: none;
+    }
+    body{
+        height: 300vh;
+    }
+    .section1{
+      
+        height: 150vh;
+      
+    }
+    .section2{
+        top: 250vh;
+        height: 150vh;
+      
+    }
+    .titlebox .img-container{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+       top: 50%;
+    }
+    .titlebox .welcome-text{
+        width: 100%;
+        height: 20%;
+        top:-3vh;
+        position: absolute;
+      
+    }
+ 
+    .titlebox .invite{
+    top:15%;
+    position: absolute;
+    width: 100%;
+    }
+    .latest{
+        position: absolute;
+        top: 30%;
+   
+        opacity: 1;
+      
+    }
+    .img-container:hover .latest{
+        opacity: 1;
+        top: 30%;
+    }
+    .titlebox .img-container::before{
+       
+        opacity: .50;
+      
+    }
+ 
+     .layer1{
+         width: 70%;
+        top: 4vh;
+        gap: 2.5vh;
+        height: 95%;
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+    .social{
+        display: none;
+    }
+    .layer2{
+        height: 10%;
+top: 190%;
+display: none;
+z-index: 3;
+    }
+    .post{
+       
+        height: 45%;
+      
+    }
+    .box p{
+        font-size: 13px;
+       top: 60%;
+    }
+    .box h1{
+        font-size: 16px;
+       top: 45%;
+    }
+    .blog-date{
+        font-size: 14px;
+        top: 85%;
+         }
+    .blog-date span{
+        font-size: 24px;
+  
+         }
+}
+
+@media all and (max-width:458px){
+
+    
+    .layer1{
+     width: 95%;
+     
+   }
+   .titlebox .welcome-text{
+     
+    font-size: 20px;
+   top: 0vh;
+}
+.titlebox .invite{
+    top:14%;
+    padding: 10px;
+
+    }
+   .welcome-text,.latest{
+        padding: 10px;
+    }
+}
+
+@media all and (max-width:328px){
+.img-container{
+    display: none;
+}
+.bigcross1,.bigcross2{
+    display: block;
+    z-index: 3;
+    left: 50%;
+    top: 75vh;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+} 
+
+body{
+    height: 350vh;
+
+}
+.section1{
+  
+    height: 180vh;
+  
+}
+.section2{
+    top: 280vh;
+    height: 180vh;
+  
+}
+
 }
