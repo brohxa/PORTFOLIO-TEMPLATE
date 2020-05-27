@@ -743,6 +743,9 @@ transition: .4s;
 }
 
 @media all and (max-width:1500px){
+    .blog-title{
+        display: none;
+    }
     .navbar{
     
         visibility: visible !important;
@@ -771,8 +774,11 @@ transition: .4s;
         left: 50%;
         height: 70vh;
     }
-    .blog-title,.daily-title{
+   .layer2{
         display: none;
+    }
+    .daily-title{
+      display: none;
     }
     .welcome-text{
         font-size: 40px;
@@ -970,9 +976,7 @@ transition: .4s;
     .latest{
         position: absolute;
         top: 30%;
-   
-        opacity: 1;
-      
+        opacity: 1; 
     }
     .img-container:hover .latest{
         opacity: 1;
