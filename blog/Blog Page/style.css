@@ -800,20 +800,7 @@ font-size: 12px;
       width: 95%;
     }
 }
-
-@media (orientation:landscape) and (max-width:1024px){
-  .name-photo{
-    top: 73vh;
-  }
-  .social{
-    left: 77%;
-  }
-  .social i{
-font-size: 15px;
-  }
-}
-
-@media (orientation:landscape) and (max-width:812px){
+@media (orientation:landscape) and (max-width:1628px) and (min-width:811px)  and (max-height:650px){
   .image-container{
     top: 42vh;
   }
@@ -873,6 +860,79 @@ font-size: 15px;
   }
 }
 
+@media (orientation:landscape) and (max-width:1024px){
+  .name-photo{
+    top: 73vh;
+  }
+  .social{
+ 
+    left: 77%;
+  }
+  .social i{
+font-size: 15px;
+  }
+}
+
+@media (orientation:landscape) and (max-width:812px){
+  .image-container{
+    top: 42vh;
+  }
+  body{
+    height: 400vh;
+  }
+  .load{
+    line-height: 22px;
+  }
+  .quote{
+    top: 380vh;
+ 
+  }
+  .quote i{
+
+    font-size: 25px !important  ;
+  } 
+  .quote h1{
+    top: 70%;
+    font-size: 14px;
+  } 
+  .quote span{
+    font-size: 16px;
+    
+  } 
+  .load-text3{
+    top: 330vh;
+  }
+  .load-text2{
+    top: 235vh;
+  }
+  .load-text{
+    top: 130vh;
+  }
+  .full-image{
+    top: 276vh;
+  }
+  .image-grid{
+    top: 191vh;
+  }
+  .name-photo{
+    top: 77vh;
+  left: 3vw;
+  }
+  .sub-heading{
+    font-size: 13px;
+  }
+  .heading{
+    font-size: 15px;
+  }
+  .social{
+    left: 78%;
+    top: 74vh;
+  }
+  .date{
+    top: 16vh;
+  }
+}
+
 
 @media (orientation:landscape) and (max-width:736px){
 .full-image{
@@ -890,8 +950,17 @@ font-size: 15px;
 }
 .social{
   left: 77%;
-
+  top: 80vh;
 }
+}
+@media (orientation:landscape) and (max-width:667px){
+.full-image{
+  top: 275vh;
+}
+.image-grid{
+  top: 194vh;
+}
+
 }
 @media (orientation:landscape) and (max-width:568px){
   body{
@@ -939,4 +1008,111 @@ font-size: 15px;
   top: 73vh;
   font-size: 11px;
 }
+}
+
+@media all and (max-width:3840px) and (min-width:2000px){
+.load{
+  font-size: 50px;
+  line-height:70px;
+}
+.heading{
+  font-size: 90px;
+}
+.sub-heading{
+  font-size: 50px;
+}
+.quote h1{
+  font-size: 40px;
+}
+.quote span{
+  font-size: 50px;
+}
+.date{
+  font-size: 30px;
+}
+.social i{
+  font-size: 35px;
+  
+}
+.social{
+  top: 16.5%;
+  left: 75%;
+}
+.name-photo{
+  font-size: 30px;
+}
+.photo{
+  left: 120%;
+
+}
+.place{
+  font-size: 40px;
+}
+.place::before{
+  width: 150px;
+  height: 30px;
+  top: 10%;
+}
+.instagram{
+  width: 650px;
+  height: 650px;
+}
+.insta-title{
+  font-size: 40px;
+  left: 86.6%;
+}
+.insta-title::before,.insta-title::after{
+  display: none;
+}
+.post{
+width: 650px;
+height: 700px;
+}
+.previous .previous1{
+ 
+  width: 200%;
+  
+  height: 50%;
+  
+}
+.previous .previous2{
+
+  width: 200%;
+  top: 100%;
+  height: 50%;
+  
+}
+.previous-heading{
+  font-size: 40px;
+  top: -10%;
+  white-space: nowrap;
+  left: 100%;
+}
+.previous .title1{
+
+  font-size: 35px;
+  white-space: nowrap;
+  
+  top: 0%;
+}
+.previous .title2{
+
+  font-size: 35px;
+  white-space: nowrap;
+  
+  top: 93%;
+}
+.previous .previous-date1{
+
+  font-size: 30px;
+
+  top: 58%;
+}
+.previous .previous-date2{
+
+  font-size: 30px;
+
+  top: 151%;
+}
+
 }
