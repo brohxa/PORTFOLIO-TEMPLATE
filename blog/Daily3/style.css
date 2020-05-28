@@ -560,6 +560,7 @@ font-family: 'poppins', sans-serif;
 }
 
 @media all and (max-width:1670px){
+ 
   .previous{
     display: none;
   }
@@ -576,6 +577,18 @@ font-family: 'poppins', sans-serif;
   .image-container img{
     height: 30vh;
   }
+  .sidebar{
+   
+    top: 6vh;
+   
+  }
+  .sidebar .link{
+   
+    font-size: 11px;
+    line-height: 12px;
+   
+  }
+
 }
 @media all and (max-width:1360px){
   .image-container,.load-text,.load-text2,.load-text3,.image-grid,.quote,.full-image{
@@ -600,9 +613,7 @@ white-space: nowrap;
     font-size: 14px;
     white-space: nowrap;
   }
-  .hamburger,.sidebar{
-    display: none;
-  }
+
 }
 
 @media all and (max-width:970px){
@@ -632,6 +643,18 @@ line-height: 4vh;
   }
   .social i{
     font-size: 17px;
+  }
+  .sidebar{
+   
+    top: 5vh;
+   
+  }
+  .sidebar .link{
+   
+    font-size: 9px;
+    font-weight: 100;
+
+   
   }
 }
 @media all and (max-width:696px){
@@ -718,21 +741,42 @@ width: 100%;
   }
 }
 
-@media all and (max-width:414px){
+@media all and (max-width:414px) and (min-width:376px){
+  .hamburger{
+    top: 2;
+  }
   .load{
     font-size: 12px;
   }
   .social i{
     font-size: 14px;
- 
+
   }
   .social{
-   top: 15.5vh;
- 
+    top: 28.5vh;
   }
+  .date{
+    top: 30.5vh;
+  }
+ .sidebar{
+   top: 10vh;
+   
+ }
+ .sidebar .link{
+  font-size: 13px;
+
+ }
+ .image-container img{
+   height: 20vh;
+   top: 15vh;
+
+ }
 }
 
 @media all and (max-width:375px){
+  .load{
+    line-height: 18px;
+  }
   .image-grid{
     height: 20vh;
     top: 147vh;
@@ -774,11 +818,14 @@ height: 20vh;
 }
 
 @media all and (max-width:320px){
+  
   .name-photo{
     display: none;
   }
   .load{
-    line-height: 16px;
+    line-height: 15px;
+    font-size: 13px;
+    
 
   }
   .load-text{
@@ -799,8 +846,19 @@ font-size: 12px;
     .sub-heading{
       width: 95%;
     }
+    .hamburger{
+      top: 0;
+    }
+    .social{
+      display: none;
+    }
+    .sidebar .link{
+      font-size: 12px;
+      line-height: 20px;
+    }
 }
 @media (orientation:landscape) and (max-width:1628px) and (min-width:811px)  and (max-height:650px){
+
   .image-container{
     top: 42vh;
   }
@@ -874,6 +932,20 @@ font-size: 15px;
 }
 
 @media (orientation:landscape) and (max-width:812px){
+  .sidebar{
+   
+    top: 12vh;
+    right: 1vw;
+   
+  }
+  .sidebar .link{
+   
+    font-size: 12px;
+    letter-spacing: 0px;
+  line-height: 25px;
+   
+  }
+
   .image-container{
     top: 42vh;
   }
@@ -960,6 +1032,10 @@ font-size: 15px;
 .image-grid{
   top: 194vh;
 }
+.image-container{
+  width: 75%;
+}
+
 
 }
 @media (orientation:landscape) and (max-width:568px){
@@ -1116,3 +1192,4 @@ height: 700px;
 }
 
 }
+
