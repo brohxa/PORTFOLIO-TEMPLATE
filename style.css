@@ -19,6 +19,10 @@
   display: flex;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .left {
   width: 25%;
   height: 100%;
@@ -258,7 +262,7 @@
   width: 650px;
   height: 50px;
   font-size: 28px;
-
+  -webkit-font-smoothing: subpixel-antialiased;
   color: rgb(0, 0, 0);
   position: absolute;
   right: 10%;
@@ -267,6 +271,7 @@
   z-index: 1;
 }
 .load-text {
+  backface-visibility: hidden;
   font-family: "Playfair Display", sans-serif;
   width: 650px;
   height: 200px;
@@ -275,13 +280,15 @@
   position: absolute;
   right: 10%;
   top: 40%;
-
+  -webkit-font-smoothing: subpixel-antialiased;
   letter-spacing: 1px;
   border-bottom: 1px solid rgb(0, 0, 0);
   padding-bottom: 20px;
   z-index: 1;
 }
 .contact {
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden !important;
   margin-top: 30px;
   font-family: "Playfair Display", sans-serif;
   width: 650px;
@@ -653,8 +660,10 @@ z-index: -1;
 .navbar-client ul {
   font-size: 16px;
   position: absolute;
+  position: absolute;
   right: 10%;
   display: flex;
+
   z-index: 1;
   padding-top: 20px;
 }
@@ -1103,6 +1112,7 @@ margin-left: 70%;
    transform: rotateZ(90deg);
  }
  .card{
+  backface-visibility: hidden;
    width: 450px;
    background-color: brown;
    border-radius: 5px;
@@ -1130,6 +1140,8 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
  .card .address{
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden;
    color: white;
    border: none;
    font-size: 10px;
@@ -1139,12 +1151,14 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   color: white;
   border: none;
   font-size: 40px;
+  backface-visibility: hidden;
  }
  .bar{
    position: absolute;
    right: 0;
    top: 70%;
    width: 100px;
+ 
  }
 
  .card-logo{
@@ -1609,3 +1623,146 @@ margin-left: 55%;
   }
 }
 
+@media all and (max-width:3840px) and (min-width:2500px){
+
+  .main{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-image{
+    height: 100%;
+  }
+  .right .name {
+    font-size: 120px;
+  }
+  .navbar li a{
+    font-size: 30px;
+  }
+  .navbar-client li a{
+    font-size: 30px;
+  }
+  .typewriter{
+    font-size: 90px;
+  }
+  .logo{
+    font-size: 60px;
+  }
+  .logo::before{
+    font-size: 40px;
+  }
+  .portfolio-button{
+    height: 120px;
+    line-height: 120px;
+    font-size: 40px;
+  }
+  .soc{
+    font-size: 35px;
+  }
+  .social-logo{
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .sub-text{
+    height: 120px;
+    width: 40%;
+    font-size: 70px;
+  }
+  .load-text{
+    height: 20%;
+    width: 40%;
+    font-size: 50px;
+    z-index: 3;
+  }
+  .contact{
+    height: 15%;
+    width: 40%;
+   font-size: 40px;
+  }
+  .social-logo,.social{
+    position: absolute;
+  }
+  .mywebsite{
+    width: 350px;
+    height: 80px;
+  
+  }
+  .mywebsite a{
+    font-size: 40px;
+    line-height: 80px;
+  }
+  .strip-left img{
+    height: 70%;
+  }
+  .strip-left p{
+    font-size: 30px;
+  }
+  .card{
+    width: 1000px;
+    border-radius: 30px;
+    height: 500px;
+  }
+  .card .address{
+    font-size: 30px;
+  }
+  .card .bar{
+    width: 200px;
+  }
+  .card .card-name{
+    font-size: 80px;
+  }
+  .white-mid p {
+    font-size: 25px;
+  }
+  .white-mid .copyright{
+    font-size: 25px;
+  }
+  .card-logo::before{
+    font-size: 30px;
+    left: -200%;
+    top:200%;
+  }
+  .card-logo::after{
+    font-size: 30px;
+    left: 150%;
+    top:200%;
+  }
+  .strip-left .red{
+    font-size: 40px;
+  }
+  .strip-left .red span{
+    font-size: 40px;
+    
+  }
+  .client-image{
+    height: 25%;
+  }
+  .client-text{
+    font-size: 40px;
+    width: 40%;
+  }
+  .client-text .fab{
+    font-size: 50px;
+  }
+  .client-name{
+    font-size: 40px;
+
+  }
+  .client-name span{
+    font-size: 25px;
+  }
+  .logo-client{
+    left: 70vw;
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    
+  }
+  .logo-client img{
+    width: 100%;
+
+
+  }
+}

@@ -159,7 +159,7 @@ cursor: pointer;
 
 .sidebar{
     font-family: 'poppins', sans-serif;
-    transform: translateX(-160%);
+    transform: translateX(-200%);
     top: 10%;
     left: 2vw;
     z-index: 5;
@@ -2652,4 +2652,172 @@ font-size: 12px;
         .gray-box{
             top: 60%;
         }
+    }
+
+    
+@media all and (max-width:3840px) and (min-width:2500px){
+    .numbers{
+     display: none;
+      
+    }
+.big-letter{
+    font-size: 120px;
+    left: 15%;
+}
+.gray-box{
+    left: 15%;
+}
+.sidebar a{
+    color:black;
+    font-size: 27px;
+    line-height: 60px;
+   
+}
+.name{
+    font-size: 70px;
+}
+.sub-name{
+    font-size: 40px;
+}
+.social i{
+    font-size: 40px;
+}
+.box1{
+    width: 1000px;
+    height: 1000px;
+}
+.box1 .cover{
+    height: 1000px;
+    width: 300px;
+}
+.box1 .cover p{
+    font-size: 30px;
+}
+.box1 .cover .date{
+    font-size: 40px;
+}
+
+.section2 .box-second{
+    width: 1000px;
+    height: 1000px;
+}
+.box-second .cover-second{
+    height: 1000px;
+    width: 300px;
+}
+.box-second .cover-second p{
+    font-size: 30px;
+}
+.box-second .cover-second .date{
+    font-size: 40px;
+}
+.section3 .box-third{
+    width: 1000px;
+    height: 1000px;
+}
+.box-third .cover-third{
+    height: 1000px;
+    width: 300px;
+}
+.box-third .cover-third p{
+    font-size: 30px;
+}
+.box-third .cover-third .date{
+    font-size: 40px;
+}
+.hamburger,.sidebar{
+    position: absolute;
+}
+.box2{
+    width: 1000px;
+    height: 1600px;
+}
+.box2::before{
+    width: 800px;
+    height: 1400px;
+}
+.box2 img{
+    height: 70%;
+}
+.box2 p{
+    font-size: 30px;
+    padding: 30px;
+}
+.box2 .type{
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+.box2 .types{
+left: 65%;
+}
+.heading1,.heading2,.heading3{
+    font-size: 60px;
+}
+.heading1::after{
+    font-size: 20px;
+}
+.heading1::before{
+    font-size: 20px;
+}
+.heading2::after{
+    font-size: 20px;
+}
+.heading2::before{
+    font-size: 20px;
+}
+.heading3::after{
+    font-size: 20px;
+}
+.heading3::before{
+    font-size: 20px;
+}
+.big-box,.big-box3{
+    width: 1500px;
+    height: 700px;
+}
+.big-box h1{
+    font-size: 30px;
+}
+.big-box3 h1{
+    font-size: 30px;
+}
+.big-box p{
+    font-size: 30px;
+}
+.big-box3 p{
+    font-size: 30px;
+}
+.big-box3 img{
+    width: 50%;
+}
+.card,.card3{
+    width: 1000px;
+    height: 450px;
+}
+.card .card-logo{
+    font-size: 150px;
+}
+.card3 .subscribe-logo{
+    font-size: 60px;
+}
+.card3 .email{
+    font-size: 30px;
+    width: 60%;
+    height: 60px;
+
+}
+.card3 .submit{
+    font-size: 30px;
+    width: 20%;
+    height: 60px;
+}
+.scroll-down p{
+    font-size: 17px;
+}
+.scroll-down1 p{
+    font-size: 17px;
+}
+.scroll-down3 a{
+    font-size: 17px;
+}
     }

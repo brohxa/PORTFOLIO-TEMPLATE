@@ -11,7 +11,7 @@
       width: 100%;
       height: 200vh;
       background-color: rgb(255, 255, 255);
-
+overflow-x: hidden;
   }
 
   .hamburger{
@@ -299,9 +299,11 @@ left: 2vw;
     height: 100%;
     right: 0;
     overflow: hidden;
+    background-size: cover;
     animation: 10s slider infinite;
     background-image: url('img/title1.jpg');
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 @keyframes slider{
@@ -1227,4 +1229,101 @@ z-index: 3;
     display: none;
 }
 
+}
+
+
+@media all and (max-width:3840px) and (min-width:2500px){
+.titlebox{
+    height: 70%;
+}
+.titlebox .welcome-text{
+    font-size: 100px;
+}
+.titlebox .invite{
+    font-size: 45px;
+}
+.titlebox .invite span{
+    font-size: 45px;
+}
+.bigcross1,.bigcross2{
+    width: 500px;
+    height: 80px;
+    font-size: 35px;
+    line-height: 70px;
+}
+.titlebox .img-container{
+  
+    width: 40%;
+    height: 100%;
+background-size: cover;
+}
+.latest p{
+  
+    font-size: 34px;
+  
+}
+.latest .date{
+    font-size: 30px;
+  
+}
+.latest{
+    font-size: 35px;
+}
+
+.layer1 .box h1{
+    font-size: 50px;
+}
+.layer1 .box p{
+    font-size: 35px;
+}
+.layer1 .box .blog-date{
+    font-size: 35px;
+}
+.blog-date span{
+
+  
+   font-size: 80px;
+
+}
+.social i{
+    font-size: 40px;
+}
+.daily-title,.blog-title{
+    font-size: 50px;
+}
+
+.more-post{
+    font-size: 30px;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+}
+.link-footer{
+    line-height: 70px;
+    font-size: 30px;
+}
+.layer2-second h1{
+    font-size: 40px;
+}
+.layer2-second p{
+    font-size: 30px;
+}
+.layer2-second span{
+    font-size: 30px;
+}
+.box .blog-location{
+    font-size: 40px;
+}
+.sidebar .link{
+    font-size: 30px;
+}
+.box-second:hover .far{
+    opacity: 1;
+    font-size: 70px;
+} 
+
+}
+
+html{
+    scroll-behavior: smooth;
 }

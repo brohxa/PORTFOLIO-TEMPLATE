@@ -1010,7 +1010,7 @@ font-size: 15px;
 }
 }
 
-@media all and (max-width:3840px) and (min-width:2000px){
+@media all and (max-width:3840px) and (min-width:2500px){
 .load{
   font-size: 50px;
   line-height:70px;
