@@ -12,7 +12,17 @@ body{
     overflow-x: hidden;
     background-color: rgb(24, 23, 23);
 }
-
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    width: 3px solid #232943;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #000000, rgb(105, 9, 9));
+    border-radius: 3px;
+  }
 
 /* HAMBURGER */
 

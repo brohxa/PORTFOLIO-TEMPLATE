@@ -4,19 +4,52 @@ const nameText = document.querySelector(".name");
 const left = document.querySelector(".left");
 const surname = document.querySelector(".surname");
 
-const tl = new TimelineMax();
 
-tl.fromTo(left, 2, { width: "0px" }, { width: "25%", ease: Power2.easeInOut })
-  .fromTo(hero, 1, { x: "-5%" }, { x: "0%", ease: Power1.easeInOut })
-  .fromTo(nameText, 1.5, { opacity: 0, y: "-50" }, { opacity: 1, y: "0" })
-  .fromTo(surname, 0.7, { opacity: 0, y: "-10" }, { opacity: 1, y: "0" });
+
+document.addEventListener("DOMContentLoaded", function (event) {
+
+  // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
+  // you could also use addEventListener() instead
+  window.onload = function () {
+
+    // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
+    window.requestAnimationFrame(function () {
+
+      // GSAP custom code goes here     
+      const tl = new TimelineMax();
+
+      tl.fromTo(left, 2, { width: "0px" }, { width: "25%", ease: Power2.easeInOut })
+        .fromTo(hero, 1, { x: "-5%" }, { x: "0%", ease: Power1.easeInOut })
+        .fromTo(nameText, 1.5, { opacity: 0, y: "-50" }, { opacity: 1, y: "0" })
+        .fromTo(surname, 0.7, { opacity: 0, y: "-10" }, { opacity: 1, y: "0" });
+
+
+    });
+
+  };
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // PRELOAD
-
+const preload = document.querySelector(".preload");
 window.addEventListener("load", function () {
-  let preload = document.querySelector(".preload");
   preload.classList.remove("preload");
 });
+
+
 
 // PAGE VARIABLES
 
@@ -78,6 +111,7 @@ const loader = document.querySelector('.loader');
 
 window.addEventListener('load', function () {
   loader.classList.remove('loader');
+
 })
 
 

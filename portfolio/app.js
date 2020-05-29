@@ -21,12 +21,41 @@ const nameText = document.querySelector(".name");
 const subText = document.querySelector(".sub-name");
 const bigText = document.querySelector(".big-letter");
 const graybox = document.querySelector(".gray-box");
-const tl = new TimelineMax();
-const tl2 = new TimelineMax();
 
-tl.fromTo(right, 2, { width: "30%" }, { width: "50%", ease: Power2.easeInOut }).fromTo(nameText, 1, { y: "-50", opacity: 0 }, { y: "0", opacity: 1 });
 
-tl2.fromTo(bigText, 2, { y: "-50", opacity: 0 }, { y: "0", opacity: 1 }).fromTo(graybox, 2, { width: "0px", opacity: 0 }, { width: "250px", opacity: 1 });
+document.addEventListener("DOMContentLoaded", function (event) {
+
+    // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
+    // you could also use addEventListener() instead
+    window.onload = function () {
+
+        // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
+        window.requestAnimationFrame(function () {
+
+            // GSAP custom code goes here     
+            const tl = new TimelineMax();
+            const tl2 = new TimelineMax();
+
+            tl.fromTo(right, 2, { width: "30%" }, { width: "50%", ease: Power2.easeInOut }).fromTo(nameText, 1, { y: "-50", opacity: 0 }, { y: "0", opacity: 1 });
+
+            tl2.fromTo(bigText, 2, { y: "-50", opacity: 0 }, { y: "0", opacity: 1 }).fromTo(graybox, 2, { width: "0px", opacity: 0 }, { width: "250px", opacity: 1 });
+
+        });
+
+    };
+
+});
+
+
+
+
+
+
+
+
+
+
+
 
 // SCROLL COVER
 
