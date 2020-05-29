@@ -57,14 +57,6 @@ for (let i = 0; i < line.length; i++) {
 }
 
 
-// PRELOAD
-
-window.addEventListener("load", function () {
-    let preload = document.querySelector(".preload");
-    preload.classList.remove("preload");
-});
-
-
 
 // LOADER
 

@@ -31,14 +31,6 @@ hamburger.addEventListener('click', () => {
 })
 
 
-// PRELOAD
-
-window.addEventListener("load", function () {
-    let preload = document.querySelector(".preload");
-    preload.classList.remove("preload");
-});
-
-
 
 // LOADER
 
