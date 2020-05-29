@@ -14,12 +14,6 @@ hamburber.addEventListener('click', function () {
     }
 })
 
-// PRELOAD
-
-window.addEventListener("load", function () {
-    let preload = document.querySelector(".preload");
-    preload.classList.remove("preload");
-});
 
 
 

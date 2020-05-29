@@ -2869,7 +2869,7 @@ left: 65%;
      animation: dot3 infinite 1s;
      animation-delay: .1s;
    }
-   .loader-line{
+.loader .loader-line{
      position: absolute;
      left: 50%;
      transform: translate(-50%);

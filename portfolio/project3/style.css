@@ -10,7 +10,6 @@ body{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(to right, rgb(41, 0, 17), black);
-    overflow: hidden;
 }
 
 
