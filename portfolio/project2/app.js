@@ -13,3 +13,20 @@ hamburber.addEventListener('click', function () {
         menu = false;
     }
 })
+
+// PRELOAD
+
+window.addEventListener("load", function () {
+    let preload = document.querySelector(".preload");
+    preload.classList.remove("preload");
+});
+
+
+
+// LOADER
+
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', function () {
+    loader.classList.remove('loader');
+})
