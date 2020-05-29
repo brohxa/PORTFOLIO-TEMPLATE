@@ -2881,16 +2881,6 @@ left: 65%;
      animation-delay: .1s;
    }
    
-   .loader-text{
-     
-    position: absolute;
-    transform: translate(-50%,-50%);
-          top: 65%;
-           left: 50%;
-           color: white;
-            font-family: 'poppins', sans-serif;
-        font-size: 18px;
-   }
    
    @keyframes loader-line{
      0%{

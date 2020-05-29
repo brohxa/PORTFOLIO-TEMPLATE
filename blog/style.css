@@ -1339,7 +1339,7 @@ html{
     position: fixed;
     }
     
-    .dot{
+  .loader  .dot{
      
     position: absolute;
     
@@ -1365,7 +1365,7 @@ html{
      animation: dot3 infinite 1s;
      animation-delay: .1s;
     }
-    .loader-line{
+  .loader  .loader-line{
      position: absolute;
      left: 50%;
      transform: translate(-50%);
@@ -1377,16 +1377,7 @@ html{
      animation-delay: .1s;
     }
     
-    .loader-text{
-     
-    position: absolute;
-    transform: translate(-50%,-50%);
-          top: 65%;
-           left: 50%;
-           color: white;
-            font-family: 'poppins', sans-serif;
-        font-size: 18px;
-    }
+  
     
     @keyframes loader-line{
      0%{
